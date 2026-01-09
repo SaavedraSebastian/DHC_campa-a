@@ -130,8 +130,7 @@ const enviarFormulario = () => {
   justify-content: flex-start;
   position: relative;
   font-family: Arial, sans-serif;
-  padding-top: 60px;
-  padding-bottom: 40px;
+
 }
 
 .logo {
@@ -161,7 +160,7 @@ const enviarFormulario = () => {
 .title {
   color: #006d44;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.4;
   margin: 0.5rem 0 0.75rem;
 }
@@ -290,7 +289,6 @@ const enviarFormulario = () => {
   max-width: 280px;
   z-index: 1;
   order: 2;
-  margin-top: -60px;
 }
 
 .products {
@@ -313,7 +311,7 @@ const enviarFormulario = () => {
   }
 
   .title {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   :deep(.p-inputtext),
@@ -322,14 +320,14 @@ const enviarFormulario = () => {
     min-height: 37px;
   }
 
-  .stroke {
-    max-width: 290px;
-    margin-top: -65px;
+    .stroke {
+    max-width: 400px;
+    margin-top: -200px;
   }
 
   .products {
-    max-width: 205px;
-    margin-top: -45px;
+    max-width: 300px;
+    margin-top: -220px;
   }
 }
 
@@ -343,7 +341,7 @@ const enviarFormulario = () => {
   }
 
   .title {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   :deep(.p-inputtext),
@@ -354,13 +352,13 @@ const enviarFormulario = () => {
   }
 
   .stroke {
-    max-width: 300px;
-    margin-top: -70px;
+    max-width: 400px;
+    margin-top: -300px;
   }
 
   .products {
-    max-width: 210px;
-    margin-top: -50px;
+    max-width: 310px;
+    margin-top: -200px;
   }
 }
 
