@@ -1,8 +1,11 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 
 import LoginView from '../views/Login.vue'
-import CampaignsView from '../views/campaigns/CampaignsView.vue'
 import MensajeCampanaView from '../views/campaigns/MensajeCampanaView.vue'
+import CampaignsView from '../views/campaigns/CampaignsView.vue'
+import DashboardAdminView from '../views/Administrador/DashboardAdminView.vue'
+import ClientesView from '../views/Administrador/ClientesView.vue'
+import CampanasView from '../views/Administrador/CampanasView.vue'
 
 
 const routes: RouteRecordRaw[] = [
@@ -26,9 +29,23 @@ const routes: RouteRecordRaw[] = [
     component: MensajeCampanaView
   },
   {
-    path: '/login',
-    name: 'Login',
-    component: LoginView
+    path: '/admin',
+    name: 'Dashboard',
+    component: DashboardAdminView,
+    children: [
+      {
+        path: 'clientes',
+        name: 'SeccionClientes' ,
+        component: ClientesView,
+        meta: {requiresAuth: true, breadcrumb: 'Secciones'}
+      },
+      {
+        path: 'campanas',
+        name: 'SeccionCampanas' ,
+        component: CampanasView,
+        meta: {requiresAuth: true, breadcrumb: 'Secciones'}
+      },
+    ]
   }
 
 ]
