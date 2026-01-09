@@ -254,7 +254,6 @@ const instagramLink = 'https://www.instagram.com/dch.peru/'
   .stroke {
     bottom: 300px;
   }
-
   .products {
     max-width: 300px;
   }
