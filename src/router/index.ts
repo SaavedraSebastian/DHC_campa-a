@@ -24,6 +24,11 @@ const routes: RouteRecordRaw[] = [
     path: '/mensaje',
     name: 'Mensaje',
     component: MensajeCampanaView
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: LoginView
   }
 
 ]
