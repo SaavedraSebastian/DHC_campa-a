@@ -290,7 +290,7 @@ const enviarFormulario = () => {
   max-width: 280px;
   z-index: 1;
   order: 2;
-  margin-top: -30px;
+  margin-top: -60px;
 }
 
 .products {
@@ -299,7 +299,7 @@ const enviarFormulario = () => {
   max-width: 200px;
   z-index: 2;
   order: 3;
-  margin-top: -20px;
+  margin-top: -40px;
   margin-bottom: 0;
 }
 
@@ -324,12 +324,12 @@ const enviarFormulario = () => {
 
   .stroke {
     max-width: 290px;
-    margin-top: -32px;
+    margin-top: -65px;
   }
 
   .products {
     max-width: 205px;
-    margin-top: -22px;
+    margin-top: -45px;
   }
 }
 
@@ -355,12 +355,12 @@ const enviarFormulario = () => {
 
   .stroke {
     max-width: 300px;
-    margin-top: -33px;
+    margin-top: -70px;
   }
 
   .products {
     max-width: 210px;
-    margin-top: -23px;
+    margin-top: -50px;
   }
 }
 
@@ -385,12 +385,12 @@ const enviarFormulario = () => {
 
   .stroke {
     max-width: 300px;
-    margin-top: -35px;
+    margin-top: -70px;
   }
 
   .products {
-    max-width: 210px;
-    margin-top: -25px;
+    max-width: 240px;
+    margin-top: -50px;
   }
 }
 
@@ -418,12 +418,12 @@ const enviarFormulario = () => {
 
   .stroke {
     max-width: 330px;
-    margin-top: -40px;
+    margin-top: -65px;
   }
 
   .products {
     max-width: 230px;
-    margin-top: -30px;
+    margin-top: -45px;
   }
 }
 
@@ -495,12 +495,12 @@ const enviarFormulario = () => {
 
   .stroke {
     max-width: 380px;
-    margin-top: -60px;
+    margin-top: -75px;
   }
 
   .products {
     max-width: 270px;
-    margin-top: -45px;
+    margin-top: -55px;
   }
 }
 
@@ -529,12 +529,12 @@ const enviarFormulario = () => {
 
   .stroke {
     max-width: 400px;
-    margin-top: -70px;
+    margin-top: -85px;
   }
 
   .products {
     max-width: 300px;
-    margin-top: -55px;
+    margin-top: -65px;
   }
 }
 
