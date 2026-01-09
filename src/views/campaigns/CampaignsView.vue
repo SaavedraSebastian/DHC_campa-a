@@ -119,7 +119,7 @@ const enviarFormulario = () => {
 
 .page {
   min-height: 100dvh;
-  overflow-y: auto;
+  overflow: hidden;
   overflow-x: hidden;
   background-size: cover;
   background-position: center;
