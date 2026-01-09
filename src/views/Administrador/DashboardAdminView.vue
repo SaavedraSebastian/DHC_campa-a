@@ -69,7 +69,6 @@ const handleAddNew = () => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .header-content {
@@ -130,7 +129,6 @@ const handleAddNew = () => {
   padding: 32px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .admin-header {
     padding: 20px 24px;
@@ -180,7 +178,6 @@ const handleAddNew = () => {
   }
 }
 
-/* Scrollbar styling */
 .admin-content::-webkit-scrollbar {
   width: 8px;
 }

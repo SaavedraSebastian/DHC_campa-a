@@ -6,6 +6,7 @@ import CampaignsView from '../views/campaigns/CampaignsView.vue'
 import DashboardAdminView from '../views/Administrador/DashboardAdminView.vue'
 import ClientesView from '../views/Administrador/ClientesView.vue'
 import CampanasView from '../views/Administrador/CampanasView.vue'
+import TerminosView from '../views/TerminosView.vue'
 
 
 const routes: RouteRecordRaw[] = [
@@ -27,6 +28,11 @@ const routes: RouteRecordRaw[] = [
     path: '/mensaje',
     name: 'Mensaje',
     component: MensajeCampanaView
+  },
+  {
+    path: '/terminos-y-condiciones',
+    name: 'terminos-y-condiciones',
+    component: TerminosView
   },
   {
     path: '/admin',

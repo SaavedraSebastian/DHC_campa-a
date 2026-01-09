@@ -166,7 +166,6 @@ onMounted(() => {
   background: #ffffff;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 0 12px rgba(0, 0, 0, 0.08);
   overflow-y: auto;
   position: relative;
   border-right: 1px solid #f0f0f0;
@@ -243,13 +242,11 @@ onMounted(() => {
 .nav-item:hover {
   background: #f9f9f9;
   color: #ff8c00;
-  border-left-color: #ff8c00;
 }
 
 .nav-item.active {
   background: rgba(255, 140, 0, 0.1);
   color: #ff8c00;
-  border-left-color: #ff8c00;
   font-weight: 600;
 }
 
@@ -279,9 +276,8 @@ onMounted(() => {
   gap: 12px;
   padding: 12px 16px;
   background: white;
-  color: #666;
-  border: 1px solid #e8e8e8;
-  border-radius: 8px;
+  color: #000000;
+  border: none;
   cursor: pointer;
   transition: all 0.25s ease;
   font-weight: 500;
@@ -316,6 +312,44 @@ onMounted(() => {
 
 .sidebar-nav::-webkit-scrollbar-thumb:hover {
   background: rgba(200, 200, 200, 0.6);
+}
+@media (max-width: 1024px) {
+  .admin-sidebar {
+  width: 200px;
+}
+.sidebar-logo {
+  width: 100px;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+}
+
+.nav-item:hover {
+  background: #f9f9f9;
+  color: #ff8c00;
+}
+
+.nav-item.active {
+  background: rgba(255, 140, 0, 0.1);
+  color: #ff8c00;
+  font-weight: 600;
+}
+
+.nav-item i {
+  font-size: 18px;
+  min-width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item span {
+  font-size: 14px;
+}
+  
 }
 @media (max-width: 768px) {
   .admin-sidebar {

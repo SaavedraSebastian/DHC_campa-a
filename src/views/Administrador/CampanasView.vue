@@ -18,7 +18,7 @@
       />
     </div>
 
-    <!-- Grid de Cards -->
+
     <div class="campanas-grid" v-if="campanasFiltradas.length > 0">
       <Card v-for="campana in campanasFiltradas" :key="campana.id" class="campana-card">
         <template #header>
@@ -118,6 +118,7 @@
               dateFormat="dd/mm/yy"
               :showIcon="true"
               class="w-full"
+              
             />
           </div>
 
@@ -142,7 +143,7 @@
         <Button 
           :label="editandoId ? 'Actualizar' : 'Crear'"
           @click="guardarCampana"
-          severity="success"
+          severity="orange"
         />
       </template>
     </Dialog>
@@ -328,6 +329,15 @@ const verCampana = (id) => {
   flex: 1;
   max-width: 400px;
 }
+:deep(.p-inputtext:enabled:hover),
+:deep(.p-inputtext:enabled:focus),
+:deep(.p-dropdown:hover),
+:deep(.p-dropdown.p-focus),
+:deep(.p-inputwrapper-focus .p-inputtext) {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #d1d5db !important;
+}
 
 :deep(.p-inputtext) {
   width: 100%;
@@ -339,7 +349,6 @@ const verCampana = (id) => {
 
 :deep(.p-inputtext:focus) {
   border-color: #ff8c00;
-  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.1);
 }
 
 .btn-crear {
@@ -348,14 +357,9 @@ const verCampana = (id) => {
   color: white !important;
   font-weight: 600 !important;
   padding: 10px 20px !important;
-  box-shadow: 0 4px 12px rgba(255, 140, 0, 0.25) !important;
   transition: all 0.3s ease !important;
 }
 
-.btn-crear:hover {
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 16px rgba(255, 140, 0, 0.35) !important;
-}
 
 .campanas-grid {
   flex: 1;
@@ -376,17 +380,12 @@ const verCampana = (id) => {
   height: 100%;
 }
 
-:deep(.campana-card.p-card:hover) {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  transform: translateY(-4px);
-}
 
 :deep(.campana-card .p-card-header) {
   padding: 0;
   background: transparent;
   border: none;
 }
-
 .card-header-content {
   display: flex;
   justify-content: space-between;
@@ -494,10 +493,8 @@ const verCampana = (id) => {
   padding: 10px 24px !important;
 }
 
-/* Modal Styles */
 :deep(.p-dialog) {
   border-radius: 12px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2) !important;
 }
 
 :deep(.p-dialog .p-dialog-header) {
@@ -550,13 +547,6 @@ const verCampana = (id) => {
   padding: 10px 12px;
   font-size: 14px;
 }
-
-:deep(.p-inputtext:focus),
-:deep(.p-inputtextarea:focus) {
-  border-color: #ff8c00;
-  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.1);
-}
-
 :deep(.p-calendar) {
   width: 100%;
 }
@@ -583,7 +573,6 @@ const verCampana = (id) => {
   width: 100%;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .campanas-grid {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
