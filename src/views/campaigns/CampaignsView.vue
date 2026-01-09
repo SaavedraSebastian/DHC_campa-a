@@ -381,14 +381,14 @@ const enviarFormulario = () => {
     min-height: 38px;
   }
 
-  .stroke {
-    max-width: 300px;
-    margin-top: -70px;
+ .stroke {
+    max-width: 400px;
+    margin-top: -300px;
   }
 
   .products {
-    max-width: 240px;
-    margin-top: -50px;
+    max-width: 310px;
+    margin-top: -200px;
   }
 }
 
@@ -414,14 +414,15 @@ const enviarFormulario = () => {
     min-height: 40px;
   }
 
-  .stroke {
-    max-width: 330px;
-    margin-top: -65px;
+
+ .stroke {
+    max-width: 400px;
+    margin-top: -250px;
   }
 
   .products {
-    max-width: 230px;
-    margin-top: -45px;
+    max-width: 350px;
+    margin-top: -250px;
   }
 }
 
@@ -457,14 +458,14 @@ const enviarFormulario = () => {
     font-size: 13px;
   }
 
-  .stroke {
-    max-width: 350px;
-    margin-top: -50px;
+   .stroke {
+    max-width: 400px;
+    margin-top: -250px;
   }
 
   .products {
-    max-width: 240px;
-   
+    max-width: 350px;
+    margin-top: -250px;
   }
 }
 
@@ -492,13 +493,13 @@ const enviarFormulario = () => {
   }
 
   .stroke {
-    max-width: 380px;
-    margin-top: -75px;
+    max-width: 400px;
+    margin-top: -250px;
   }
 
   .products {
-    max-width: 270px;
-    margin-top: -55px;
+    max-width: 350px;
+    margin-top: -250px;
   }
 }
 
@@ -525,14 +526,14 @@ const enviarFormulario = () => {
     font-size: 14px;
   }
 
-  .stroke {
+   .stroke {
     max-width: 400px;
-    margin-top: -85px;
+    margin-top: -250px;
   }
 
   .products {
-    max-width: 300px;
-    margin-top: -65px;
+    max-width: 350px;
+    margin-top: -250px;
   }
 }
 
