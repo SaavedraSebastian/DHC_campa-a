@@ -118,44 +118,52 @@ const enviarFormulario = () => {
 <style scoped>
 
 .page {
-  height: 100dvh;
-  overflow: hidden;
+  min-height: 100dvh;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   position: relative;
   font-family: Arial, sans-serif;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .logo {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 65px;
-  z-index: 3;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  width: 50px;
+  z-index: 100;
 }
 
 .content {
   width: 100%;
   max-width: 95%;
-  padding: 12px;
+  padding: 8px 12px;
   text-align: center;
   z-index: 2;
+  order: 1;
 }
 
 .banner {
-  width: 80%;
-  margin-top: 3rem;
+  width: 70%;
+  max-width: 100%;
+  margin: 0.5rem auto 1rem;
+  display: block;
 }
 
 .title {
   color: #006d44;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0.5rem 0 0.75rem;
 }
 
 .highlight {
@@ -166,13 +174,14 @@ const enviarFormulario = () => {
 .form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
+  width: 100%;
 }
 
 .row {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 
@@ -277,26 +286,162 @@ const enviarFormulario = () => {
 
 .stroke {
   position: relative;
-  bottom: 250px;
   width: 100%;
-  max-width: 375px;
+  max-width: 280px;
   z-index: 1;
+  order: 2;
+  margin-top: -30px;
 }
 
 .products {
-  position: absolute;
-  bottom: 0;
-  max-width: 280px;
+  position: relative;
+  width: 100%;
+  max-width: 200px;
   z-index: 2;
+  order: 3;
+  margin-top: -20px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 375px) {
+  .logo {
+    width: 55px;
+  }
+
+  .banner {
+    width: 70%;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+
+  :deep(.p-inputtext),
+  :deep(.p-dropdown) {
+    font-size: 12px;
+    min-height: 37px;
+  }
+
+  .stroke {
+    max-width: 290px;
+    margin-top: -32px;
+  }
+
+  .products {
+    max-width: 205px;
+    margin-top: -22px;
+  }
+}
+
+@media (min-width: 425px) {
+  .logo {
+    width: 58px;
+  }
+
+  .banner {
+    width: 71%;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+
+  :deep(.p-inputtext),
+  :deep(.p-dropdown) {
+    font-size: 12px;
+    min-height: 38px;
+    padding: 6px 10px;
+  }
+
+  .stroke {
+    max-width: 300px;
+    margin-top: -33px;
+  }
+
+  .products {
+    max-width: 210px;
+    margin-top: -23px;
+  }
+}
+
+@media (min-width: 480px) {
+  .logo {
+    width: 60px;
+  }
+
+  .banner {
+    width: 72%;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  :deep(.p-inputtext),
+  :deep(.p-dropdown) {
+    font-size: 12px;
+    min-height: 38px;
+  }
+
+  .stroke {
+    max-width: 300px;
+    margin-top: -35px;
+  }
+
+  .products {
+    max-width: 210px;
+    margin-top: -25px;
+  }
+}
+
+@media (min-width: 640px) {
+  .content {
+    max-width: 85%;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .banner {
+    width: 70%;
+  }
+
+  :deep(.p-inputtext),
+  :deep(.p-dropdown) {
+    min-height: 40px;
+  }
+
+  .stroke {
+    max-width: 330px;
+    margin-top: -40px;
+  }
+
+  .products {
+    max-width: 230px;
+    margin-top: -30px;
+  }
 }
 
 @media (min-width: 768px) {
   .content {
-    max-width: 60%;
+    max-width: 65%;
   }
 
   .logo {
-    width: 100px;
+    width: 80px;
+  }
+
+  .banner {
+    width: 65%;
+  }
+
+  .title {
+    font-size: 18px;
   }
 
   .row {
@@ -310,43 +455,86 @@ const enviarFormulario = () => {
 
   :deep(.p-inputtext),
   :deep(.p-dropdown) {
-    min-height: 45px;
+    min-height: 42px;
     font-size: 13px;
+  }
+
+  .stroke {
+    max-width: 350px;
+    margin-top: -50px;
   }
 
   .products {
     max-width: 240px;
+   
   }
 }
 
 @media (min-width: 1024px) {
   .content {
-    max-width: 40%;
+    max-width: 50%;
   }
 
   .logo {
-    width: 150px;
-  }
-
-  .title {
-    font-size: 24px;
+    width: 100px;
   }
 
   .banner {
-    width: 50%;
+    width: 60%;
+  }
+
+  .title {
+    font-size: 20px;
   }
 
   :deep(.p-inputtext),
   :deep(.p-dropdown) {
+    min-height: 46px;
+    font-size: 13px;
+  }
+
+  .stroke {
+    max-width: 380px;
+    margin-top: -60px;
+  }
+
+  .products {
+    max-width: 270px;
+    margin-top: -45px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content {
+    max-width: 45%;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .banner {
+    width: 55%;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  :deep(.p-inputtext),
+  :deep(.p-dropdown) {
+    min-height: 48px;
     font-size: 14px;
   }
 
   .stroke {
-    bottom: 280px;
+    max-width: 400px;
+    margin-top: -70px;
   }
 
   .products {
     max-width: 300px;
+    margin-top: -55px;
   }
 }
 
